@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('city');
             $table->string('address');
             $table->string('civic_n');
-            $table->string('CAP');
+            $table->string('cap');
             $table->string('description');
             $table->timestamps();
             $table->softDeletes();

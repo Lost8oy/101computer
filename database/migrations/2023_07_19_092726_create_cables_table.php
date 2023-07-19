@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('cables', function (Blueprint $table) {
             $table->id();
             $table->foreignId('position_id');
-            $table->foreignId('relations_id');
             $table->string('type');
             $table->string('description');
             $table->timestamps();
