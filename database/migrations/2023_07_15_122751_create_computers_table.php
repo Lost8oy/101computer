@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->foreignId('position_id');
             $table->foreignId('manufacturer_id');
-            $table->foreignId('relations_id');
             $table->string('inventory_number');
             $table->string('serial_number');
             $table->string('model');
