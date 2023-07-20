@@ -16,4 +16,16 @@ class Container extends Model
         'code',
         'description'
     ];
+
+    public function shelves(){
+        return $this->belongsTo(shelves::class);
+    }
+
+    public function computers(){
+        return $this->hasMany(computers::class);
+    }
+
+    public function monitors(){
+        return $this->hasMany(monitors::class);
+    }
 }
