@@ -22,10 +22,26 @@ class Joystick extends Model
         'description',
     ];
     
-    public function manufacturer() {
-        return $this->belongsto('App\Models\Manufacturer', 'manufacturer_id', 'id');
+    public function shelves(){
+        return $this->belongsTo(shelves::class);
     }
-    public function modelid() {
-        return $this->hasMany('App\Models\Item', 'item_id', 'id');
+    public function containers(){
+        return $this->belongTo(containers::class);
+    }
+    
+    public function manufacturers(){
+        return $this->belongsTo(manufacturers::class);
+    }
+
+    public function images(){
+        return $this->hasMany(images::class);
+    }
+
+    public function issues(){
+        return $this->hasMany(issues::class);
+    }
+
+    public function boxes(){
+        return $this->hasOne(boxes::class);
     }
 }

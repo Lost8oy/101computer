@@ -26,8 +26,23 @@ class Computer extends Model
         'description',
     ];
 
-     public function box(): hasOne {
-        return $this->hasOne('App\Models\Box');
+     
+    public function shelves(){
+        return $this->belongsTo(shelves::class);
+    }
+    public function containers(){
+        return $this->belongTo(containers::class);
+    }
+    public function boxes(){
+        return $this->hasOne(boxes::class);
+    }
+
+    public function manufacturers(){
+        return $this->belongsTo(manufacturers::class);
+    }
+
+    public function images(){
+        return $this->hasMany(issues::class);
     }
 
 }

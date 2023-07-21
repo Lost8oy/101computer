@@ -16,7 +16,20 @@ class Image extends Model
         'description',
     ];
     
-    public function item() {
-        return $this->belongsTo('App\Models\Item', 'item_id', 'id');
+    public function computers() {
+        return $this->belongsTo(computers::class);
     }
+    public function keyboards() {
+        return $this->hasMany(keyboards::class);
+    }
+    public function joysticks() {
+        return $this->hasMany(joysticks::class);
+    }
+    public function monitors() {
+        return $this->hasMany(monitors::class);
+    }
+
+    public function cables(){
+        return $this->belongsTo(cables::class);
+        }
 }

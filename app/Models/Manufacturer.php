@@ -18,20 +18,20 @@ class Manufacturer extends Model
         'description',
     ];
 
-    public function country() {
-        return $this->belongsTo('App\Models\Country','country_id','id');
+    public function countries() {
+        return $this->belongsTo(countries::class);
     }
 
-    public function computer() {
-        return $this->hasMany('App\Models\Computer');
+    public function computers() {
+        return $this->hasMany(computers::class);
     }
-    public function keyboard() {
-        return $this->hasMany('App\Models\Keyboard');
+    public function keyboards() {
+        return $this->hasMany(keyboards::class);
     }
-    public function joystick() {
-        return $this->hasMany('App\Models\Joystick');
+    public function joysticks() {
+        return $this->hasMany(joysticks::class);
     }
-    public function monitor() {
-        return $this->hasMany('App\Models\Monitor');
+    public function monitors() {
+        return $this->hasMany(monitors::class);
     }
 }

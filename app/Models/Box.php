@@ -15,4 +15,18 @@ class Box extends Model
         'item_id',
         'condition'
     ];
+
+    public function computers(){
+        return $this->belongsTo(computers::class);
+    }
+    public function keyboards() {
+        return $this->hasMany(keyboards::class);
+    }
+    public function joysticks() {
+        return $this->hasMany(joysticks::class);
+    }
+    public function monitors() {
+        return $this->hasMany(monitors::class);
+    }
+
 }

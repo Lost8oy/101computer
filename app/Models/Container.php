@@ -28,4 +28,16 @@ class Container extends Model
     public function monitors(){
         return $this->hasMany(monitors::class);
     }
+
+    public function keyboards(){
+        return $this->hasMany(keyboards::class);
+    }
+
+    public function joysticks(){
+        return $this->hasMany(joysticks::class);
+    }
+
+    public function cables(){
+        return $this->hasMany(cables::class);
+    }
 }
