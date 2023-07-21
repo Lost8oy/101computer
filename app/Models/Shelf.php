@@ -16,10 +16,27 @@ class Shelf extends Model
         'description',
     ];
     
-    public function manufacturer() {
-        return $this->belongsto('App\Models\Manufacturer', 'manufacturer_id', 'id');
+    public function computers(){
+        return $this->hasMany(computers::class);
     }
-    public function modelid() {
-        return $this->hasMany('App\Models\Item', 'item_id', 'id');
+
+    public function monitors(){
+        return $this->hasMany(monitors::class);
+    }
+
+    public function keyboards(){
+        return $this->hasMany(keyboards::class);
+    }
+
+    public function joysticks(){
+        return $this->hasMany(joysticks::class);
+    }
+
+    public function cables(){
+        return $this->hasMany(cables::class);
+    }
+
+    public function containers(){
+        return $this->hasMany(containers::class);
     }
 }
