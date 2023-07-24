@@ -9,6 +9,8 @@ use App\Http\Controllers\KeyboardController;
 use App\Http\Controllers\JoystickController;
 use App\Http\Controllers\MonitorController;
 use App\Http\Controllers\ManufacturerController;
+use App\Http\Controllers\CableController;
+use App\Http\Controllers\BuildingController;
 use App\Models\computer;
 
 
@@ -77,3 +79,24 @@ route::post('/monitor', [MonitorController::class, 'store'])->name('monitor.stor
 route::get('/monitor/{monitor}/edit', [MonitorController::class, 'edit'])->name('monitor.create');
 route::put('/monitor/{monitor}/update', [MonitorController::class, 'update'])->name('monitor.update');
 route::delete('/monitor/{monitor}/destroy', [MonitorController::class, 'destroy'])->name('monitor.destroy');
+//cable route
+route::get('/cable', [CableController::class, 'index'])->name('cable.index');
+route::get('/cable/create', [CableController::class, 'create'])->name('cable.create');
+route::post('/cable', [CableController::class, 'store'])->name('cable.store');
+route::get('/cable/{cable}/edit', [CableController::class, 'edit'])->name('cable.create');
+route::put('/cable/{cable}/update', [CableController::class, 'update'])->name('cable.update');
+route::delete('/cable/{cable}/destroy', [CableController::class, 'destroy'])->name('cable.destroy');
+//building route
+route::get('/building', [BuildingController::class, 'index'])->name('building.index');
+route::get('/building/create', [BuildingController::class, 'create'])->name('building.create');
+route::post('/building', [BuildingController::class, 'store'])->name('building.store');
+route::get('/building/{building}/edit', [BuildingController::class, 'edit'])->name('building.create');
+route::put('/building/{building}/update', [BuildingController::class, 'update'])->name('building.update');
+route::delete('/building/{building}/destroy', [BuildingController::class, 'destroy'])->name('building.destroy');
+//zone route
+route::get('/zone', [ZoneController::class, 'index'])->name('zone.index');
+route::get('/zone/create', [ZoneController::class, 'create'])->name('zone.create');
+route::post('/zone', [ZoneController::class, 'store'])->name('zone.store');
+route::get('/zone/{zone}/edit', [ZoneController::class, 'edit'])->name('zone.create');
+route::put('/zone/{zone}/update', [ZoneController::class, 'update'])->name('zone.update');
+route::delete('/zone/{zone}/destroy', [ZoneController::class, 'destroy'])->name('zone.destroy');
