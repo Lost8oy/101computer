@@ -17,10 +17,6 @@ use App\Http\Controllers\ContainerController;
 use App\Http\Controllers\ImageController;
 use App\Http\Controllers\IssueController;
 use App\Http\Controllers\BoxController;
-use App\Models\Box;
-use App\Models\computer;
-use App\Models\Issue;
-use App\Models\Shelf;
 
 Route::get('/', function () {
     return view('welcome');
