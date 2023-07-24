@@ -16,4 +16,23 @@ class Cable extends Model
         'type',
         'description'
     ];
+
+    public function shelves(){
+        return $this->belongsTo(shelves::class);
+    }
+
+    public function containers(){
+        return $this->belongTo(containers::class);
+    }
+    public function manufacturers(){
+        return $this->belongsTo(manufacturers::class);
+    }
+
+    public function images(){
+        return $this->hasMany(images::class);
+    }
+
+    public function issues(){
+        return $this->hasMany(issues::class);
+    }
 }

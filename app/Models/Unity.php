@@ -16,7 +16,11 @@ class Unity extends Model
         'description',
     ];
     
-    public function shelf() {
-        return $this->hasMany('App\Models\Shelf');
+    public function shelves() {
+        return $this->hasMany(shelf::class);
+    }
+
+    public function zones(){
+        return $this->belongsto(zones::class);
     }
 }

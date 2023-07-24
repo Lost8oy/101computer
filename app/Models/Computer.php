@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Computer extends Model
 {
@@ -25,10 +26,23 @@ class Computer extends Model
         'description',
     ];
 
-    public function manufacturer() {
-        return $this->belongsTo('App\Models\Manufacturer', 'manufacturer_id', 'id');
+     
+    public function shelves(){
+        return $this->belongsTo(shelves::class);
     }
-    public function item() {
-        return $this->belongsTo('App\Models\Item');
+    public function containers(){
+        return $this->belongTo(containers::class);
     }
+    public function boxes(){
+        return $this->hasOne(boxes::class);
+    }
+
+    public function manufacturers(){
+        return $this->belongsTo(manufacturers::class);
+    }
+
+    public function images(){
+        return $this->hasMany(issues::class);
+    }
+
 }
