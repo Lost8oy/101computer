@@ -11,8 +11,16 @@ use App\Http\Controllers\MonitorController;
 use App\Http\Controllers\ManufacturerController;
 use App\Http\Controllers\CableController;
 use App\Http\Controllers\BuildingController;
+use App\Http\Controllers\ZoneController;
+use App\Http\Controllers\UnityController;
+use App\Http\Controllers\ContainerController;
+use App\Http\Controllers\ImageController;
+use App\Http\Controllers\IssueController;
+use App\Http\Controllers\BoxController;
+use App\Models\Box;
 use App\Models\computer;
-
+use App\Models\Issue;
+use App\Models\Shelf;
 
 Route::get('/', function () {
     return view('welcome');
@@ -100,3 +108,45 @@ route::post('/zone', [ZoneController::class, 'store'])->name('zone.store');
 route::get('/zone/{zone}/edit', [ZoneController::class, 'edit'])->name('zone.create');
 route::put('/zone/{zone}/update', [ZoneController::class, 'update'])->name('zone.update');
 route::delete('/zone/{zone}/destroy', [ZoneController::class, 'destroy'])->name('zone.destroy');
+//unity route
+route::get('/unity', [UnityController::class, 'index'])->name('unity.index');
+route::get('/unity/create', [UnityController::class, 'create'])->name('unity.create');
+route::post('/unity', [UnityController::class, 'store'])->name('unity.store');
+route::get('/unity/{unity}/edit', [UnityController::class, 'edit'])->name('unity.create');
+route::put('/unity/{unity}/update', [UnityController::class, 'update'])->name('unity.update');
+route::delete('/unity/{unity}/destroy', [UnityController::class, 'destroy'])->name('unity.destroy');
+//shelf route
+route::get('/shelf', [ShelfController::class, 'index'])->name('shelf.index');
+route::get('/shelf/create', [ShelfController::class, 'create'])->name('shelf.create');
+route::post('/shelf', [ShelfController::class, 'store'])->name('shelf.store');
+route::get('/shelf/{shelf}/edit', [ShelfController::class, 'edit'])->name('shelf.create');
+route::put('/shelf/{shelf}/update', [ShelfController::class, 'update'])->name('shelf.update');
+route::delete('/shelf/{shelf}/destroy', [ShelfController::class, 'destroy'])->name('shelf.destroy');
+//container route 
+route::get('/container', [ContainerController::class, 'index'])->name('container.index');
+route::get('/container/create', [ContainerController::class, 'create'])->name('container.create');
+route::post('/container', [ContainerController::class, 'store'])->name('container.store');
+route::get('/container/{container}/edit', [ContainerController::class, 'edit'])->name('container.create');
+route::put('/container/{container}/update', [ContainerController::class, 'update'])->name('container.update');
+route::delete('/container/{container}/destroy', [ContainerController::class, 'destroy'])->name('container.destroy');
+//image route
+route::get('/image', [ImageController::class, 'index'])->name('image.index');
+route::get('/image/create', [ImageController::class, 'create'])->name('image.create');
+route::post('/image', [ImageController::class, 'store'])->name('image.store');
+route::get('/image/{image}/edit', [ImageController::class, 'edit'])->name('image.create');
+route::put('/image/{image}/update', [ImageController::class, 'update'])->name('image.update');
+route::delete('/image/{image}/destroy', [ImageController::class, 'destroy'])->name('image.destroy');
+//issue route 
+route::get('/issue', [IssueController::class, 'index'])->name('issue.index');
+route::get('/issue/create', [IssueController::class, 'create'])->name('issue.create');
+route::post('/issue', [IssueController::class, 'store'])->name('issue.store');
+route::get('/issue/{issue}/edit', [IssueController::class, 'edit'])->name('issue.create');
+route::put('/issue/{issue}/update', [IssueController::class, 'update'])->name('issue.update');
+route::delete('/issue/{issue}/destroy', [IssueController::class, 'destroy'])->name('issue.destroy');
+//box route
+route::get('/box', [BoxController::class, 'index'])->name('box.index');
+route::get('/box/create', [BoxController::class, 'create'])->name('box.create');
+route::post('/box', [BoxController::class, 'store'])->name('box.store');
+route::get('/box/{box}/edit', [BoxController::class, 'edit'])->name('box.create');
+route::put('/box/{box}/update', [BoxController::class, 'update'])->name('box.update');
+route::delete('/box/{box}/destroy', [BoxController::class, 'destroy'])->name('box.destroy');
