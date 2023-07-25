@@ -17,7 +17,11 @@ class Zone extends Model
         'description',
     ];
 
-    public function unity() {
-        return $this->hasMany('App\Models\Unity');
+    public function unities() {
+        return $this->hasMany(unity::class);
+    }
+
+    public function buildings() {
+        return $this->belongsTo(building::class);
     }
 }
