@@ -19,7 +19,7 @@ class Building extends Model
         'description',
     ];
 
-    public function modelid() {
-        return $this->hasMany('App\Models\Zone');
+    public function zones() {
+        return $this->hasMany(zone::class);
     }
 }
