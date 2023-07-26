@@ -49,14 +49,13 @@
                     </a>
                     <ul class="sub-menu" aria-expanded="true">
                         <li>
-                            <a href="javascript: void(0);" class="has-arrow">Vertical</a>
+                            <a href="javascript: void(0);" class="has-arrow">Manage Database</a>
                             <ul class="sub-menu" aria-expanded="true">
-                                <li><a href="layouts-dark-sidebar.html">Dark Sidebar</a></li>
-                                <li><a href="layouts-compact-sidebar.html">Compact Sidebar</a></li>
-                                <li><a href="layouts-icon-sidebar.html">Icon Sidebar</a></li>
-                                <li><a href="layouts-boxed.html">Boxed Layout</a></li>
-                                <li><a href="layouts-preloader.html">Preloader</a></li>
-                                <li><a href="layouts-colored-sidebar.html">Colored Sidebar</a></li>
+                                <li><a href="">Countries</a></li>
+                                <li><a href="">Manufacturers</a></li>
+                                <li><a href="">Buildings</a></li>
+                                <li><a href="">Shelves</a></li>
+                                <li><a href="">Containers</a></li>
                             </ul>
                         </li>
 
