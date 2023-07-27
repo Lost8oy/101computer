@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('computers', function (Blueprint $table) {
             $table->id();
+            $table->boolean('bool_position');
             $table->foreignId('position_id');
             $table->foreignId('manufacturer_id');
             $table->string('inventory_number');

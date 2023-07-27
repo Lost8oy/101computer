@@ -21,5 +21,7 @@ class DatabaseSeeder extends Seeder
         $this->call(ZonesTableSeeder::class);
         $this->call(UnitsTableSeeder::class);
         $this->call(ShelvesTableSeeder::class);
+        $this->call(ComputersTableSeeder::class);
+        $this->call(MonitorsTableSeeder::class);
     }
 }
