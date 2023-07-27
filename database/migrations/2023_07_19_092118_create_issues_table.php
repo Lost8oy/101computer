@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignId('item_id');
             $table->date('start_date');
             $table->boolean('solved');
-            $table->date('finish_date');
+            $table->date('finish_date'); 
             $table->date('comment');
             $table->timestamps();
             $table->softDeletes();

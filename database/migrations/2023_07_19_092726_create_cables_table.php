@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('cables', function (Blueprint $table) {
             $table->id();
+            $table->boolean('bool_position');
             $table->foreignId('position_id');
             $table->string('type');
             $table->string('description');
