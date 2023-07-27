@@ -17,7 +17,7 @@ use App\Http\Controllers\IssueController;
 use App\Http\Controllers\BoxController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 route::group(['namespace'=>'User', 'prefix'=>'costumer'], function (){
