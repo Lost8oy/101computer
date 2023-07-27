@@ -26,5 +26,8 @@ class DatabaseSeeder extends Seeder
         $this->call(ContainersTableSeeder::class);
         $this->call(KeyboardsTableSeeder::class);
         $this->call(JoysticksTableSeeder::class);
+        $this->call(CablesTableSeeder::class);
+        $this->call(BoxesTableSeeder::class);
+        $this->call(IssuesTableSeeder::class);
     }
 }
