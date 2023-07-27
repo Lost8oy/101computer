@@ -22,13 +22,13 @@ class MonitorsTableSeeder extends Seeder
             0 => 
             array (
                 'id' => 1,
+                'bool_position' => 0,
                 'position_id' => 0,
                 'manufacturer_id' => 0,
-                'relations_id' => 0,
                 'inventory_number' => '02',
                 'serial_number' => '8765456831',
                 'model' => 'Amstrad ',
-                'year' => '0000-00-00',
+                'year' => '1984-01-01',
                 'color' => 'Black',
                 'size' => '14"',
                 'pixels' => '320x200',
