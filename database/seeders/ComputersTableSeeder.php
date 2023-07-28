@@ -39,6 +39,26 @@ class ComputersTableSeeder extends Seeder
                 'updated_at' => NULL,
                 'deleted_at' => NULL,
             ),
+            1 => 
+            array (
+                'id' => 2,
+                'bool_position' => 1,
+                'position_id' => 0,
+                'manufacturer_id' => 1,
+                'inventory_number' => 'C0003',
+                'serial_number' => 'VM138FLLR',
+                'model' => 'Apple IMac',
+                'submodel' => 'M5521',
+                'processor' => 'Power PC 750',
+                'power' => '80W',
+                'speed' => '333MHz',
+                'year' => '2000-01-01',
+                'bit' => '32',
+                'description' => '',
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'deleted_at' => NULL,
+            ),
         ));
         
         
