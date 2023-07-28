@@ -17,7 +17,7 @@ return new class extends Migration
             $table->date('start_date');
             $table->boolean('solved');
             $table->date('finish_date'); 
-            $table->date('comment');
+            $table->text('comment');
             $table->timestamps();
             $table->softDeletes();
         });
