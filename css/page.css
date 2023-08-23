@@ -1,0 +1,117 @@
+.TopBar {
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 10%;
+    display: flex;
+    width: 100%;
+    position: fixed;
+}
+
+.Timeline {
+    background-color: #d12e26;
+    position: absolute;
+    height: 42.3px;
+    right: 359px;
+    width: 107px;
+    top: 24px;
+    border-bottom: 6px inset rgba(0, 0, 0, .5);
+    border-left: 6px inset rgba(0, 0, 0, .5);
+    border-right: 6px inset rgba(255, 255, 255, .5);
+    border-top: 6px inset rgba(255, 255, 255, .5);
+    font-size: 16;
+    cursor: pointer;
+}
+
+.img {
+    width: 10%;
+}
+
+.button1 {
+    background-color: #db6443;
+    right: 246px;
+    height: 42.3px;
+    width: 107px;
+    position: absolute;
+    top: 24px;
+    border-bottom: 6px inset rgba(0, 0, 0, .5);
+    border-left: 6px inset rgba(0, 0, 0, .5);
+    border-right: 6px inset rgba(255, 255, 255, .5);
+    border-top: 6px inset rgba(255, 255, 255, .5);
+    font-size: 16;
+    cursor: pointer;
+}
+
+.button2 {
+    background-color: #f9d656;
+    position: absolute;
+    right: 133px;
+    height: 42.3px;
+    width: 107px;
+    top: 24px;
+    border-bottom: 6px inset rgba(0, 0, 0, .5);
+    border-left: 6px inset rgba(0, 0, 0, .5);
+    border-right: 6px inset rgba(255, 255, 255, .5);
+    border-top: 6px inset rgba(255, 255, 255, .5);
+    font-size: 16;
+    cursor: pointer;
+}
+
+.aboutUS {
+    position: absolute;
+    background-color: #67ab54;
+    top: 24px;
+    width: 107px;
+    height: 42.3px;
+    right: 20px;
+    border-bottom: 6px inset rgba(0, 0, 0, .5);
+    border-left: 6px inset rgba(0, 0, 0, .5);
+    border-right: 6px inset rgba(255, 255, 255, .5);
+    border-top: 6px inset rgba(255, 255, 255, .5);
+
+    /* font-family: 'VT323', monospace; */
+    font-size: 16;
+    cursor: pointer;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.BottomBar {
+    background-color: black;
+    color: white;
+    opacity: 70%;
+    height: 4%;
+    z-index: 50;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.text {
+    text-align: left;
+    position: absolute;
+    font-size: 20px;
+    top: -13px;
+    opacity: 100%;
+}
+
+.login {
+    position: absolute;
+    opacity: 100%;
+    z-index: 50;
+    right: 125px;
+    top: 8px;
+    font-size: 14px;
+}
+
+.register {
+    position: absolute;
+    opacity: 100%;
+    right: 30px;
+    top: 8px;
+    font-size: 14px;
+}

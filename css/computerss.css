@@ -1,0 +1,200 @@
+.heading1 {
+    position: relative;
+    line-height: 120%;
+  }
+  .content3,
+  .heading1,
+  .text1 {
+    align-self: stretch;
+  }
+  .text1 {
+    position: relative;
+    font-size: var(--text-medium-normal-size);
+    line-height: 150%;
+  }
+  .content3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xl);
+  }
+  .button5 {
+    position: relative;
+    line-height: 150%;
+  }
+  .button3,
+  .button7 {
+    border: 1px solid var(--black);
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-xs) var(--padding-5xl);
+    align-items: center;
+    justify-content: center;
+  }
+  .button3 {
+    background-color: var(--black);
+  }
+  .button7 {
+    color: var(--black);
+  }
+  .actions1,
+  .column2 {
+    display: flex;
+    align-items: flex-start;
+  }
+  .actions1 {
+    flex-direction: row;
+    padding: var(--padding-base) 0 0;
+    justify-content: flex-start;
+    gap: var(--gap-base);
+    font-size: var(--text-regular-normal-size);
+    color: var(--white);
+  }
+  .column2 {
+    flex: 1;
+    height: 900px;
+    flex-direction: column;
+    padding: 0 var(--padding-61xl) 0 var(--padding-45xl);
+    box-sizing: border-box;
+    justify-content: center;
+    gap: var(--gap-5xl);
+  }
+  .placeholder-image {
+    flex: 1;
+    position: relative;
+    max-height: 100%;
+    width: 720px;
+    object-fit: cover;
+  }
+  @media (max-width: 1260px) {
+    .placeholder-image {
+      position: relative;
+      max-height: 100%;
+      width: 520px;
+      height: 420px;
+    }
+  }
+  .heading2 {
+    position: relative;
+    line-height: 140%;
+  }
+  .content4,
+  .heading2,
+  .text2 {
+    align-self: stretch;
+  }
+  .text2 {
+    position: relative;
+    font-size: var(--text-regular-normal-size);
+    line-height: 150%;
+  }
+  .content4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-9xs);
+  }
+  .dot,
+  .dot1 {
+    position: relative;
+    border-radius: 50%;
+    background-color: var(--black);
+    width: 8px;
+    height: 8px;
+  }
+  .dot1 {
+    background-color: var(--color-gray);
+  }
+  .slider-dots {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+  }
+  .icon1 {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .button8,
+  .slider-buttons {
+    display: flex;
+    flex-direction: row;
+  }
+  .button8 {
+    border-radius: var(--br-31xl);
+    border: 1px solid var(--black);
+    padding: var(--padding-xs);
+    align-items: center;
+    justify-content: center;
+  }
+  .slider-buttons {
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-mini);
+  }
+  .content5,
+  .row2 {
+    align-self: stretch;
+  }
+  .content5 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  
+  }
+  .row2 {
+    flex-direction: column;
+    padding: var(--padding-13xl);
+    align-items: flex-start;
+    gap: var(--gap-29xl);
+  }
+  .column7,
+  .container,
+  .row2 {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .column7 {
+    background-color: var(--light-grey);
+    height: 900px;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--heading-h6-size);
+  }
+  .container {
+    align-self: stretch;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .header-102,
+  .home {
+    background-color: var(--white);
+    overflow: hidden;
+  }
+  .header-102 {
+    position: absolute;
+    top: 460px;
+    left: 0;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .home {
+    position: relative;
+    width: 100%;
+    height: 1901px;
+    text-align: left;
+    color: var(--black);
+    font-family: var(--heading-h6);
+  }
+  
